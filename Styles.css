@@ -230,8 +230,36 @@ input[name=search]:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    animation-name: sec5In;
+    transform: translateX(-400px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
 }
+/*.active {
+    opacity: 1;
+    transform: translateX(0); 
+    
+}*/
 
+@keyframes sec5In {
+    0% {
+      transform: translateX(-400px);
+    }
+    20% {
+        transform: translateX(-300px);
+      }
+      40% {
+        transform: translateX(-200px);
+      }
+      60% {
+        transform: translateX(-120px);
+      }
+      80% {
+        transform: translateX(-50px);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 .section-5 h1{
     display: block;
@@ -290,6 +318,13 @@ input[name=search]:hover {
     align-items: center;
     background-color: #fcb440;
     justify-content: center;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
+}
+.active-6{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .abacus {
@@ -331,6 +366,13 @@ input[name=search]:hover {
     flex-shrink: 0;
     flex-direction: row;
     align-items: center;
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
+}
+.active-7{
+    opacity: 1;
+    transform: translateX(0);
 }
 .section-7-lorem{
     display: flex;
@@ -432,7 +474,15 @@ input[name=search]:hover {
     background-position: top center;
     background-repeat: no-repeat;
     background-size:cover;
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
 }
+.active-8{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 .testemonials-8 h1{
     display: block;
@@ -517,7 +567,15 @@ input[name=search]:hover {
     align-items: center;
     justify-content: center;
     padding-bottom: 10px !important;
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
 }
+.active-9{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 .section-9 h1 {
     display: block;
@@ -540,7 +598,15 @@ input[name=search]:hover {
     align-items: center;
     justify-content: space-around;
     background-color: #636363;
-}   
+    opacity: 0;
+    transform: translateX(500px);
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.8s;
+}
+.active-10{
+    opacity: 1;
+    transform: translateX(0);
+}
+   
 .contact-left {
     display: flex;
     flex-basis: 45%;
